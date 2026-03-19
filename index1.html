@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <style>
+      .hero-section {
+        background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+        padding: 120px 0;
+        min-height: 100vh;
+      }
+      .feature-icon{
+        width:64px;
+        height:64px;
+        background-color:#6366f1;
+        color:white;
+        border-radius: 12px;
+        align-items: center;
+        display:flex;
+        justify-content:center;
+        font-size:20px;
+        margin-bottom: 1rem;
+      }
+      .card {
+        border: none;
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .testimonial-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .social-links a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NavBar Begins -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        
+        
+        <div class="container">
+            <a href="" class="navbar-brand fw-cold text-primary">
+                <i class="bi bi-boxes"></i> StartUp
+            </a>
+            <button class="navbar-toggler"
+             type="button" 
+             data-bs-toggle="collapse" 
+             data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#Features" class="nav-link active">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Pricing" class="nav-link active">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Testimonials" class="nav-link active">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-2" href="#GetStarted" class="nav-link active">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+     </nav>  
+     <!-- NavBar Ends-->
+      <!-- Hero Section -->
+       <section class="hero-section text-white alin-items-center">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+             <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-4 fw-bold mb-4">Transform Your Business with our solution</h1>
+                <p class="lead mb-4">
+                    Empower your business with cutting-edge tools and insights. 
+                    Start your journey today.
+                </p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start"
+                >
+                    <a href="#Contact" class="btn btn-light btn-lg w-100 w-sm-auto">Get Started</a>
+                    <a href="#Contact" class="btn btn-outline btn-lg w-100 w-sm-auto">Learn More</a>
+                </div>
+             </div>
+             <div class="col-lg-6">
+                        <img class="img-fluid rounded-4 shadow" src="images/Tech.jpg" alt="Hero Image">
+             </div>
+            </div>
+        </div>
+        </section>
+            <!-- <a href="#GetStarted" class="btn btn-primary btn-lg">Get Started</a> -->
+        </div>
+        <section id="features" class="py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                 <h2 class="fw-bold">Amazing Features</h2>
+                 <p class="text-muted">Discover what makes us different</p>
+                </div>
+                <div class="row g-4">
+                    <!-- feature 1 -->
+                    <div class="col-md-4">
+                        <div class="card h-100 p-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-gear"></i>
+                            </div>
+                            <h4>Easy Integration</h4>
+                                <p class="text-muted">
+                                    Seamlessly integrate with your existing
+                                     tools and workflows.
+                                </p>   
+                        </div>
+                    </div>
+                    <!-- feature 2 -->
+                     <div class="col-md-4">
+                        <div class="card h-100 p-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <h4>Secure & Reliable</h4>
+                                <p class="text-muted">
+                                   Your data is protected
+                                    with enterprise-grade security.
+                                </p>   
+                        </div>
+                    </div>
+                    <!-- feature 3 -->
+                     <div class="col-md-4">
+                        <div class="card h-100 p-4">
+                            <div class="feature-icon">
+                                <i class="bi bi-graph-up"></i>
+                            </div>
+                            <h4>Analytics</h4>
+                                <p class="text-muted">
+                                    Get insights with powerful 
+                                    analytics tools.
+                                </p>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing -->
+         <section id="pricing" class="bg-light py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">Simple Pricing</h2>
+                    <p class="text-muted">Choose the plan that fits for you</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Basic plan -->
+                     <div class="col-lg-4">
+                        <div class="card pricing-card h-100 p-4">
+                            <h5 class="text-muted">Basic</h5>
+                            <h2 class="display-4 fw-bold md-4">
+                                $9<small class="fs-6">/month</small>
+                            </h2>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3">
+                                    <i class="bi bi-check text-primary me-2"></i> basic features
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-check text-primary me-2"></i> 1 User
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-check text-primary me-2"></i> 5G Storage
+                                </li>
+                                <a class="btn btn-outline-primary w-100" href="#">Get Started</a>
+                            </ul>
+                            
+                            
+                        </div>
+                        
+                     </div>
+                     <!-- pro -->
+                     <div class="col-lg-4">
+                        <div class="card pricing-card h-100 p-4">
+                            <div class="card-body">
+                            <span class="badge bg-primary">Popular</span>
+                            <h5 class="text-muted">Pro</h5>
+                            <h2 class="display-4 fw-bold md-4">
+                                $29<small class="fs-6">/month</small>
+                            </h2>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3">
+                                    <i class="bi bi-check text-primary me-2"></i>All basic features
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-check text-primary me-2"></i> 5 User
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-check text-primary me-2"></i> 50G Storage
+                                </li>
+                                <a class="btn btn-primary w-100" href="#">Get Started</a>
+                            </ul>
+                            
+                          </div>  
+                        </div>
+                        
+                     </div>
+                     <!-- Enterprise -->
+                      <div class="col-lg-4">
+                        <div class="card pricing-card h-100 p-4">
+                            <h5 class="text-muted">Enterprise</h5>
+                            <h2 class="display-4 fw-bold md-4">
+                                $99<small class="fs-6">/month</small>
+                            </h2>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-3">
+                                    <i class="bi bi-check text-primary me-2"></i>All Pro features
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-check text-primary me-2"></i> Unlimited User
+                                </li>
+                                <li class="mb-3">
+                                    <i class="bi bi-check text-primary me-2"></i> 1TB Storage
+                                </li>
+                                <a class="btn btn-outline-primary w-100" href="#">Contact Us</a>
+                            </ul>
+                            
+                            
+                        </div>
+                        
+                     </div>
+                </div>
+            </div>
+         </section>
+         <!-- Testimonial section -->
+          <section id="testimonials" class="py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">What Our Customers Say</h2>
+                    <p class="text-muted">Trusted by thousands of customers</p>
+                </div>
+             <div class="row g-4">
+          <!-- Testimonial 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <div class="d-flex align-items mb-4">
+                <img
+                  class="testimonial-img"
+                  src="https://cdn.pixabay.com/photo/2020/05/17/20/21/cat-5183427_1280.jpg"
+                  alt="client 1"
+                />
+                <div>
+                  <h5 class="mb-0">John Doe</h5>
+                  <small class="text-muted">CEO, Company</small>
+                </div>
+              </div>
+              <p class="text-muted">
+                "Amazing product! It has transformed how we do business."
+              </p>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <div class="d-flex align-items mb-4">
+                <img
+                  class="testimonial-img"
+                  src="https://cdn.pixabay.com/photo/2016/02/11/16/59/dog-1194083_1280.jpg"
+                  alt="client 1"
+                />
+                <div>
+                  <h5 class="mb-0">Jane Smith</h5>
+                  <small class="text-muted">CTO, StartUp</small>
+                </div>
+              </div>
+              <p class="text-muted">
+                "The best solution we've found for our business needs."
+              </p>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <!-- Testimonial 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 p-4">
+              <div class="d-flex align-items mb-4">
+                <img
+                  class="testimonial-img"
+                  src="https://cdn.pixabay.com/photo/2020/12/12/17/24/little-egret-5826070_1280.jpg"
+                  alt="client 1"
+                />
+                <div>
+                  <h5 class="mb-0">Mike Johnson</h5>
+                  <small class="text-muted">CEO, Company</small>
+                </div>
+              </div>
+              <p class="text-muted">
+                "Incredible support and powerful features. Highly recommended!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="bg-light py-5">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <div class="card shadow-sm">
+              <div class="card-body p-4 p-md-5">
+                <h3 class="fw-bold mb-4">Get In Touch</h3>
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input
+                      class="form-control form-control-lg"
+                      type="text"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input
+                      class="form-control form-control-lg"
+                      type="email"
+                      placeholder="Your Email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea
+                      class="form-control form-control-lg"
+                      rows="4"
+                      placeholder="Your Message"
+                    >
+                    </textarea>
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-lg w-100 mt-4"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>StartUp</h5>
+            <p>© 2025 StartUp. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="social-links">
+              <a class="text-white" href="#">
+                <i class="bi bi-twitter"></i>
+              </a>
+
+              <a class="text-white" href="#">
+                <i class="bi bi-facebook"></i>
+              </a>
+
+              <a class="text-white" href="#">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a class="text-white" href="#">
+                <i class="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+      <!-- Bootstrap Js -->
+    <script
+     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+     crossorigin="anonymous">
+    </script>
+  </body>
+</html>
